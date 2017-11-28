@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RotationImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvv-sm-d8p">
+                                <rect key="frame" x="85" y="472" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kvv-sm-d8p" secondAttribute="height" multiplier="86:15" id="072-BX-Zf3"/>
+                                    <constraint firstAttribute="height" constant="30" id="W1M-lD-JKd"/>
+                                    <constraint firstAttribute="width" constant="172" id="zOc-CH-tEw"/>
+                                </constraints>
+                                <state key="normal" title="Rotate Image"/>
+                                <connections>
+                                    <action selector="btnRotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A99-Pf-nWy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_xcode.png" translatesAutoresizingMaskIntoConstraints="NO" id="EYe-Ox-jeS">
+                                <rect key="frame" x="62" y="80" width="236" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="NCX-GL-9P5"/>
+                                    <constraint firstAttribute="width" constant="236" id="VaM-Kh-wJp"/>
+                                    <constraint firstAttribute="width" secondItem="EYe-Ox-jeS" secondAttribute="height" multiplier="59:52" id="xmq-Jz-Lsi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRo-QN-2ch">
+                                <rect key="frame" x="85" y="526" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kRo-QN-2ch" secondAttribute="height" multiplier="86:15" id="2OM-L6-wpg"/>
+                                    <constraint firstAttribute="width" constant="172" id="eSk-XE-A2O"/>
+                                    <constraint firstAttribute="height" constant="30" id="rju-Kd-KAt"/>
+                                </constraints>
+                                <state key="normal" title="Rotate Image 2"/>
+                                <connections>
+                                    <action selector="btnRotate2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCs-hJ-Klp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kvv-sm-d8p" secondAttribute="trailing" constant="102" id="0Wq-z4-N6W"/>
+                            <constraint firstItem="kvv-sm-d8p" firstAttribute="top" secondItem="EYe-Ox-jeS" secondAttribute="bottom" constant="184" id="17e-3Q-68b"/>
+                            <constraint firstItem="EYe-Ox-jeS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="K7A-AX-ET2"/>
+                            <constraint firstItem="EYe-Ox-jeS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="Qos-uf-MjI"/>
+                            <constraint firstItem="kvv-sm-d8p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="bTo-40-AU1"/>
+                            <constraint firstItem="kRo-QN-2ch" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="f8J-fj-jOB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kRo-QN-2ch" secondAttribute="trailing" constant="102" id="iJh-KN-6e4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kRo-QN-2ch" secondAttribute="bottom" constant="111" id="qa5-uu-ixz"/>
+                            <constraint firstItem="kRo-QN-2ch" firstAttribute="top" secondItem="kvv-sm-d8p" secondAttribute="bottom" constant="24" id="x5t-wE-Njm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EYe-Ox-jeS" secondAttribute="trailing" constant="61" id="zzz-fV-gI6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgPreview" destination="EYe-Ox-jeS" id="iLw-EE-prw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_xcode.png" width="512" height="512"/>
+    </resources>
+</document>
